@@ -9,9 +9,9 @@ int main(){
     Mat image, result1, result2;
     image = imread("../assets/putin.jpg", IMREAD_COLOR);
 
-    line(image, Point2f(102,102), Point2f(358, 278), Scalar(0, 0, 255), 5, 8, 0);
-    line(image, Point2f(362,282), Point2f(298, 398), Scalar(0, 0, 255), 5, 8, 0);
-    line(image, Point2f(102,102), Point2f(298, 402), Scalar(0, 0, 255), 5, 8, 0);
+    line(image, Point2f(450,100), Point2f(750, 650), Scalar(0, 0, 255), 5, 8, 0);
+    line(image, Point2f(750,650), Point2f(1000, 300), Scalar(0, 0, 255), 5, 8, 0);
+    line(image, Point2f(1000,300), Point2f(450, 100), Scalar(0, 0, 255), 5, 8, 0);
 
     Mat warpMat1 = (Mat_<double>(2,3) <<1.2, 0.2, 2, -0.3, 1.3, 1);
     Mat warpMat2 = (Mat_<double>(2,3) <<1.2, 0.3, 2, 0.2, 1.3, 1);
