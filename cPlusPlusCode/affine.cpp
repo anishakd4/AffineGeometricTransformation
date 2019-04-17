@@ -16,8 +16,8 @@ int main(){
     Mat warpMat1 = (Mat_<double>(2,3) <<1.2, 0.2, 2, -0.3, 1.3, 1);
     Mat warpMat2 = (Mat_<double>(2,3) <<1.2, 0.3, 2, 0.2, 1.3, 1);
 
-    warpAffine(image, result1, warpMat1, Size(image.cols, image.rows), INTER_LINEAR, BORDER_REFLECT_101);
-    warpAffine(image, result2, warpMat2, Size(image.cols, image.rows), INTER_LINEAR, BORDER_REFLECT_101);
+    warpAffine(image, result1, warpMat1, Size(1.5*image.cols, 1.4*image.rows), INTER_LINEAR, BORDER_REFLECT_101);
+    warpAffine(image, result2, warpMat2, Size(1.5*image.cols, 1.4*image.rows), INTER_LINEAR, BORDER_REFLECT_101);
 
     namedWindow("image", WINDOW_NORMAL);
     namedWindow("result1", WINDOW_NORMAL);
